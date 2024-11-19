@@ -1,0 +1,214 @@
+/* delete me */
+html {
+    background-color: #323232;
+    color: #FFF;
+    
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#root {
+    width: 100%;
+}
+
+.App {
+    max-width: 1800px;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    min-height: 100vh;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.main {
+    flex-basis: 100%;
+    padding: 2em 4em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .main {
+        padding: 2em;
+    }
+}
+
+.info {
+    padding-bottom: 3em;
+}
+
+@media (max-width: 600px) {
+    .info {
+        padding-bottom: 4em;
+    }
+}
+
+.btn-mode {
+    cursor: pointer;
+    opacity: 0.5;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1em;
+    font-family: inherit;
+    padding: 0;
+}
+
+.btn-mode--active {
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .modes { display: none }
+}
+
+.btn-randomise {
+    position: absolute;
+    margin-top: 2em;
+    width: 10em;
+}
+
+.btn-randomise button {
+    margin-bottom: 0em;
+}
+
+@media (max-width: 600px) {
+    .btn-randomise {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.fullscreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+h2, p {
+    font-size: 1em;
+    margin-top: 0;
+}
+
+.appInstructions {
+    font-size: 0.75em;
+}
+
+#knob circle {
+    fill: black;
+}
+
+#knob path {
+    fill: #FFF;
+}
+
+svg linearGradient {
+    fill: #FFF!important;
+}
+
+.rc-slider {
+    padding: 0.75em 0;
+}
+
+.rc-slider-disabled {
+    background-color: transparent;
+    opacity: 0.5;
+}
+.rc-slider-rail {
+    background-color: #FFF;
+}
+
+.rc-slider-handle {
+    border-color: #FFF;
+    background-color: black;
+}
+
+.rc-slider-track {
+    background-color: black;
+}
+
+.download {
+    padding: 1em 0 0 0;
+}
+
+@media (max-width: 600px) {
+    .sliders {
+        display: none;
+    }
+}
+
+
+
+
+/* App.css */
+.modes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.mode-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-mode {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #bbb;
+    border-radius: 5px;
+    background-color: #d3d3d3;
+    color: #333;
+    transition: background-color 0.3s, transform 0.2s, border-color 0.3s;
+}
+
+.btn-mode--active {
+    background-color: #808080;
+    color: white;
+    border-color: #a9a9a9;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-mode:hover {
+    background-color: #b0b0b0;
+    color: #333;
+    border-color: #aaa;
+}
+
+.btn-random {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    border: 2px solid #bbb;
+    border-radius: 5px;
+    background-color: #d3d3d3;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-random:hover {
+    background-color: #808080;
+    color: white;
+    border-color: #a9a9a9;
+}
